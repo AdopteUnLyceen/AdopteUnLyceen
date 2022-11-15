@@ -7,9 +7,9 @@ function next(){
     for(i = 0; i < states.length; i++){
         if(typeof(states[i+1]) == 'undefined' && states[i+1] == null){
             if(checkCookie()){
-                window.location.href = "/cloud/home.html"
+                window.location.href = "/AdopteUnLyceen/home.html"
             } else{
-                window.location.href = "/cloud/login.html"
+                window.location.href = "/AdopteUnLyceen/login.html"
             }
             break
         };
