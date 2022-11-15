@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/login.css">
+    <link rel="stylesheet" href="static/theme.css">
+    <link rel="stylesheet" href="static/version.css">
+    <title>Cloud</title>
+</head>
+<body>
+    <div class="container">
+        <div class="line"></div>
+        <div class="wrapper">
+            <img src="https://plexcollectionposters.com/images/2021/05/16/background-images-for-login-page3bc68c53b0db224b.jpg">
+            <div class="signup" id="SIGNUP">
+                <p class="title" onclick="switchToRegister()"><span>or</span>Sign up</h2>
+                <div class="holder">
+                    <input id="signName" type="text" class="input" placeholder="Name" />
+                    <input id="signEmail" type="email" class="input" placeholder="Email" />
+                    <input id="signPassword" type="password" class="input" placeholder="Password" />
+                </div>
+                <input type="button" class="submit" onclick="setRegister()" value="Sign Up">
+            </div>
+            <div class="login" id="LOGIN">
+                <p class="title" onclick="switchToLogin()"><span>or</span>Log in</h2>
+                <div class="holder">
+                    <input id="loginName" type="text" class="input" placeholder="Name" />
+                    <input id="loginEmail" type="email" class="input" placeholder="Email" />
+                    <input id="loginPassword" type="password" class="input" placeholder="Password" />
+                </div>
+                <input type="button" class="submit" onclick="setLogin()" value="Log in">
+            </div>
+        </div>
+        <p class="version" id="VERSION">V0.02</p>
+    </div>
+    <script type="text/javascript" src="login.js"></script>
+    <script type="text/javascript" src="cookies.js"></script>
+    <script>
+        if(checkCookie()){
+            window.location.href = "/cloud/home.html"
+        }
+    </script>
+</body>
+</html>

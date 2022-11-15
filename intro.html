@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/intro.css">
+    <link rel="stylesheet" href="static/theme.css">
+    <link rel="stylesheet" href="static/version.css">
+    <title>Cloud</title>
+</head>
+<body>
+    <div class="container">
+        <div class="line"></div>
+        <div class="close">
+            <img src="https://iconarchive.com/download/i83494/custom-icon-design/mono-general-1/back.ico" onclick="window.location.href='/cloud/'">
+        </div>
+        <div class="txt" id="txtBar">
+            <div class="img">
+                <img src="static/logo.png">
+            </div>
+            <p id="FIRST" class="title first active">Trouve ton crush</p>
+            <p id="SECOND" class="title second">Envoie un DM</p>
+            <p id="THIRD" class="title third">Fais ta vie</p>
+        </div>
+        <div class="interact" id="stateBar">
+            <div class="dots">
+                <div class="dot one active" id="ONE"></div>
+                <div class="dot two" id="TWO"></div>
+                <div class="dot three" id="THREE"></div>
+            </div>
+            <div class="button">
+                <input class="next" type="button" value="Next" onclick="next()">
+            </div>
+        </div>
+        <p class="version" id="VERSION">V0.02</p>
+    </div>
+    <script type="text/javascript" src="stateBar.js"></script>
+    <script type="text/javascript" src="cookies.js"></script>
+</body>
+</html>
