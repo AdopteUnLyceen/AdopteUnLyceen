@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+body div.container {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  width: 100%;
+  height: 90%;
+  overflow-x: hidden;
+}
+body div.container div.inline {
+  position: relative;
+  width: max-content;
+  height: max-content;
+  background-color: blue;
+  margin-left: 2.5%;
+}
+body div.container div.inline div.wrapper {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  width: max-content;
+  background-color: red;
+  margin-top: 25px;
+}
+body div.container div.inline div.wrapper div.card {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin-right: 50px;
+  background-color: grey;
+}
+body div.container div.incolumn {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: 50%;
+  margin-top: 50px;
+}
+body div.container div.incolumn p.title {
+  margin-left: 2.5%;
+}
+body div.container div.incolumn div.wrapper {
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  flex-wrap: wrap;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+body div.container div.incolumn div.wrapper div.card {
+  display: flex;
+  position: relative;
+  width: 15%;
+  height: 0;
+  padding-bottom: 15%;
+  margin-bottom: 25px;
+  background-color: grey;
+}
