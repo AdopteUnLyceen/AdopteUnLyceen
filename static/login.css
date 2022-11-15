@@ -78,7 +78,7 @@ body div.container div.wrapper div.signup p.title {
   transform: translate(-50%, -50%);
   font-size: 2em;
   font-family: "Fira Sans", Helvetica, Arial, sans-serif;
-  color: var(--black-line);
+  color: white;
   cursor: auto;
 }
 body div.container div.wrapper div.signup p.title span {
@@ -227,4 +227,12 @@ body div.container div.wrapper div.login input.submit {
 body div.container div.wrapper div.login input.submit:hover {
   border: 2px solid var(--blue-color);
   box-shadow: inset 800px -75px 20px 50px var(--black-line);
+}
+
+@media (orientation: portrait) {
+  body div.container div.wrapper {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
 }
