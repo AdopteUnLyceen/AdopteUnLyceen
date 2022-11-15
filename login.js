@@ -3,7 +3,7 @@ function login(username, password, email){
     setCookie("password", password, 186);
     setCookie("email", email, 186);
     if(checkCookie()){
-        window.location.href = "/cloud/home.html";
+        window.location.href = "/AdopteUnLyceen/home.html";
     } else{
         window.location.reload();
     }
