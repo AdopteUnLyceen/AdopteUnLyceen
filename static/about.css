@@ -1,0 +1,106 @@
+header {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 50px;
+  z-index: 9;
+}
+header div.header {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+header div.header a.header {
+  color: white;
+  padding: 7px 7px;
+  font-size: 17px;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 2px;
+  transition: all 300ms;
+}
+header div.header a.header.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+header div.header a.header:hover {
+  text-decoration-color: green;
+  transition: all 300ms;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--black-line);
+}
+body div.container {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
+body div.container div.wrapper {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+}
+body div.container div.wrapper div.card {
+  display: flex;
+  position: relative;
+  width: 100%;
+  margin-bottom: 150px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+body div.container div.wrapper div.card:nth-child(2) {
+  left: 100%;
+  transform: translateX(-100%);
+}
+body div.container div.wrapper div.card:nth-child(2) div.infos {
+  left: 100%;
+  transform: translateX(-105%);
+}
+body div.container div.wrapper div.card:nth-child(2) div.infos div.title p.title {
+  text-align: end;
+}
+body div.container div.wrapper div.card:nth-child(2) div.infos div.description p.description {
+  text-align: end;
+}
+body div.container div.wrapper div.card div.infos {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 40%;
+  height: 100%;
+  transform: translate(5%);
+}
+body div.container div.wrapper div.card div.infos div.title p.title {
+  font-size: 3em;
+  font-weight: bold;
+  color: white;
+}
+body div.container div.wrapper div.card div.infos div.description {
+  display: flex;
+  position: relative;
+  margin-top: 25px;
+}
+body div.container div.wrapper div.card div.infos div.description p.description {
+  font-size: 1.75em;
+  font-style: italic;
+  color: white;
+}
