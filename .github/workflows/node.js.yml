@@ -27,4 +27,3 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
         cache-dependency-path: '**/.github/workflows/package-lock.json'
-    - run: npm test
